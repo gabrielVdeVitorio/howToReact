@@ -1,0 +1,50 @@
+.ol__li--calories
+{
+    font-weight: 600;
+}
+
+.div__ol--listedItems
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-width: 15rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0.5rem 0.5rem 1rem #0005;
+    background-color: #3b0;
+}
+
+.ol__li
+{
+    padding: 2px 5px;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    list-style-position: inside;
+    cursor: pointer;
+}
+
+.ol__li:hover
+{
+    background-color: #1a0;
+    border-radius: 6px;
+}
+
+.div__h3--category
+{
+    font-size: 2rem;
+}
+
+.div--componentList
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: fit-content; 
+    padding-bottom: 3.4rem;
+}

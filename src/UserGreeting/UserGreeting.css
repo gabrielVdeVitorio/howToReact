@@ -1,0 +1,18 @@
+.h2--message
+{
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.h2--welcome-message
+{
+    background-color: #9f0;
+}
+
+.h2--login-message
+{
+    background-color: #f00;
+}

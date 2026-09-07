@@ -1,0 +1,33 @@
+.card
+{
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #0003;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 225px;
+  display: inline-block;
+  background-image: linear-gradient(#00f 0%, #00f 35%, #fff 35%, #fff 100%);
+}
+
+.card__imgProfilePic
+{
+  border: 4px solid #00f;
+  padding: 4px;
+  background-color: #fff;
+  max-width: 70%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card__h2Title
+{
+  color: #444;
+}
+
+.card__pDescription
+{
+  color: #555;
+}
