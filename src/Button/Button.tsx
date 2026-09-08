@@ -2,15 +2,16 @@ import styles from './Button.module.css'
 
 interface ButtonProps
 {
-    content?: string;
+    content?: string,
+    onClick: () => void,
+    onDoubleClick?: () => void
 }
 
-function Button({content="Click here"}: ButtonProps)
+function Button({onDoubleClick, onClick, content="Click here"}: ButtonProps)
 {
-    const handleClick = (e) => e.target.textContent = 'OUCH!';
 
     return (
-        <button onDoubleClick={ (e) => handleClick(e) } className={styles.button}>{content}</button>
+        <button onDoubleClick={onDoubleClick} onClick={onClick} className={styles.button}>{content}</button>
     )
 }
 

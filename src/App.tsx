@@ -1,5 +1,7 @@
+import Counter from './MyComponent/Counter.tsx'
 import List from './List/List.tsx'
 import UserGreeting from './UserGreeting/UserGreeting.tsx'
+import MyComponent from './MyComponent/MyComponent.tsx'
 import Card from './Card/Card.tsx'
 import Button from './Button/Button.tsx'
 import './App.css'
@@ -23,8 +25,8 @@ function App() {
                       ];
   return (
     <>
+    
     <main className="container">
-      <Button/>
       <Card name="Gabriel Vitório dos Santos"/>
       <UserGreeting isLoggedIn={true} username="GabrielV"/>
       
@@ -34,6 +36,8 @@ function App() {
         <List items={vegetables} category="Vegetables"/>
         
       </section>
+      <MyComponent/>
+      <Counter/>
 
       
     </main>
