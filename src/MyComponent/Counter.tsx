@@ -17,9 +17,9 @@ function Counter()
     return (
         <div className="div--counter-container">
             <p className="div__p--counter-display">Count is {count}</p>
-            <Button onClick={increment} content='Increment'/>
+            <Button onPressedAndHold={increment} onClick={increment} content='Increment'/>
             <Button onClick={() => setCount(0)} content='Reset'/>
-            <Button onClick={decrement} content='Decrement'/>
+            <Button onPressedAndHold={decrement} onClick={decrement} content='Decrement'/>
         </div>
     );
 }

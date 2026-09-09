@@ -3,7 +3,7 @@ import List from './List/List.tsx'
 import UserGreeting from './UserGreeting/UserGreeting.tsx'
 import MyComponent from './MyComponent/MyComponent.tsx'
 import Card from './Card/Card.tsx'
-import Button from './Button/Button.tsx'
+// import Button from './Button/Button.tsx'
 import './App.css'
 
 
