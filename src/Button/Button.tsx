@@ -29,6 +29,7 @@ function Button(
         norepeat: () => { onPressedAndHold() },
         cancelrepeat: () =>
         {
+            console.log('Entering cancel repeat');
             cancelAnimationFrame(holdRepeatTicket.current);
             this.cancelnorepeat();
         },
@@ -45,6 +46,7 @@ function Button(
         {
             timerRef.current = setTimeout(() =>
             {
+                console.log('Entering the start hold');
                 isHoldRef.current = true;
                 whetherRepeatFunction[whetherRepeat]();
             }, holdTime);
@@ -53,8 +55,10 @@ function Button(
 
     const cancelHold = () =>
     {
+        console.log(`Executing cancelHold function. whetherRepeat is '${whetherRepeat}' and whetherRepeatFunci.`);
         if (timerRef.current)
         {
+            console.log(`Entering in the cancelHold if statement.`);
             whetherRepeatFunction[`cancel${whetherRepeat}`];
         }
     };
@@ -71,13 +75,9 @@ function Button(
 
     return (
         <button
-            onPointerDown={cancelHold}
+            onPointerDown={startHold}
             onPointerUp={cancelHold}
-            onMouseDown={startHold}
-            onMouseUp={cancelHold}
-            onMouseLeave={cancelHold}
-            onTouchStart={startHold}
-            onTouchEnd={cancelHold}
+            onPointerLeave={cancelHold}
             onClick={handleClick}
             onDoubleClick={onDoubleClick}
             className={styles.button}
